@@ -16,9 +16,9 @@ export default function Home() {
     if(isFetched) {
       content = cards.map((card) => (
         <>
-        <div key={card.id} className="flex flex-col border items-center rounded-md p-3 mx-auto px-4 justify-between h-fit w-full ">
+        <div key={card.id} className="flex flex-col border items-center rounded-md p-3 mx-auto px-4 justify-between w-full">
             <img className="max-h-48 min-h-48 object-contain w-full h-full" src={card.image} alt="" />
-            <a className="w-full text-center p-1 cursor-pointer">{card.title}</a>
+            <a className="block w-full text-center p-1 cursor-pointer whitespace-nowrap overflow-hidden text-ellipsis">{card.title}</a>
         </div>
         </>
       ))
@@ -33,7 +33,7 @@ export default function Home() {
             <h1>Добро пожаловать на мой пет-проект</h1>
             <h1>Выберите категорию</h1>
           </div>}
-          <div className="m-5 flex gap-4">
+          <div className="m-5 grid grid-cols-5 box-border gap-4">
             {content}
           </div>
         </div>
