@@ -27,6 +27,7 @@ const Layout = () => {
                 isActive ? 'border-b border-gray-600' : ''
             } 
             to='/'>Home</NavLink>
+            <input type="text" className="border rounded-md pl-5 outline-none hover:border-black transition" placeholder="Search"/>
             <NavLink className={({isActive}) =>
                 isActive ? 'border-b border-gray-600' : ''
             } to='/about'>About</NavLink>

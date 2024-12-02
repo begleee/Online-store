@@ -27,7 +27,7 @@ export default function Categories({onClick}) {
         <div className="flex flex-col">
         {
             categories.map((category, key) => (
-                <button value={category} onClick={onClick} className={`text-left p-3 transition border-b hover:bg-gray-50`} key={key}>
+                <button value={category} onClick={onClick} className={`text-left p-3 transition border-b hover:bg-gray-50 hover:border-b-black`} key={key}>
                     {category.charAt(0).toUpperCase() + category.slice(1)}
                 </button>
             ))
